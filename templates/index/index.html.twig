@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello IndexController!{% endblock %}
+
+{% block body %}
+
+    <a href="/dugi">Show</a>
+
+    {% for article in articles %}
+         {{ article.title }}
+        <a href="/edit/{{ article.id }}">Edit</a>
+
+    {% endfor %}
+
+
+{% endblock %}
